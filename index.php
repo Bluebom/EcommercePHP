@@ -11,6 +11,9 @@ Rotas::get_page();
 //valores para o template
 $smarty->assign('NOME', 'Franklin Henrique');
 
+
+echo Rotas::get_SiteRoot(); 
+
 // LastLine
 $smarty->display('index.tpl');
 ?>
