@@ -2,6 +2,8 @@
     class Rotas
     {
         public static $pag;
+        private static $pasta_controller = 'Controller';
+        private static $pasta_view = 'View';
 
 
         public static function get_SiteHome(){
@@ -10,6 +12,14 @@
 
         public static function get_SiteRoot(){
             return $_SERVER['DOCUMENT_ROOT'] . '/' . Config::SITE_PASTA;
+        }
+
+        public static function get_SiteTema(){
+            return self::get_SiteHome() . '/' . self::$pasta_view;
+        }
+
+        public static function pag_carrinho(){
+            return self::get_SiteHome() . '/carrinho';
         }
 
 

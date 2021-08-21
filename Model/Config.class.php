@@ -2,8 +2,8 @@
 class Config
 {
     //Informações Básicas do SITE
-    const SITE_URL = "http://localhost/dashboard/EcommercePHP",
-        SITE_PASTA = "dashboard/EcommercePHP/",
+    const SITE_URL = "http://localhost",
+        SITE_PASTA = "dashboard/EcommercePHP",
         SITE_NOME = "Loja - PHP7 e MySQL",
         SITE_EMAIL_ADM = "lojadofreitas@gmail.com";
 

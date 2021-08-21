@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/**
+ * Remove anchor tex-decoration
+ */
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/**
+ * Remove list-style
+ */
+ol,
+ul {
+  list-style: none;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+em,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+footer,
+header,
+nav,
+section,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12,
+.grid-13,
+.grid-14,
+.grid-15,
+.grid-16,
+.grid-1-3 {
+  margin: 0 10px;
+}
+
+.grid-1 {
+  width: calc( 980px / 16 * 1 - 20px);
+}
+
+.grid-2 {
+  width: calc( 980px / 16 * 2 - 20px);
+}
+
+.grid-3 {
+  width: calc( 980px / 16 * 3 - 20px);
+}
+
+.grid-4 {
+  width: calc( 980px / 16 * 4 - 20px);
+}
+
+.grid-5 {
+  width: calc( 980px / 16 * 5 - 20px);
+}
+
+.grid-6 {
+  width: calc( 980px / 16 * 6 - 20px);
+}
+
+.grid-7 {
+  width: calc( 980px / 16 * 7 - 20px);
+}
+
+.grid-8 {
+  width: calc( 980px / 16 * 8 - 20px);
+}
+
+.grid-9 {
+  width: calc( 980px / 16 * 9 - 20px);
+}
+
+.grid-10 {
+  width: calc( 980px / 16 * 10 - 20px);
+}
+
+.grid-11 {
+  width: calc( 980px / 16 * 11 - 20px);
+}
+
+.grid-12 {
+  width: calc( 980px / 16 * 12 - 20px);
+}
+
+.grid-13 {
+  width: calc( 980px / 16 * 13 - 20px);
+}
+
+.grid-14 {
+  width: calc( 980px / 16 * 14 - 20px);
+}
+
+.grid-15 {
+  width: calc( 980px / 16 * 15 - 20px);
+}
+
+.grid-16 {
+  width: calc( 980px / 16 * 16 - 20px);
+}
+
+.grid-1-3 {
+  width: calc( 980px * 16 / 3 / 16 - 20px);
+}
+
+body, html {
+  height: 100%;
+  background-color: tomato;
+}
+
+.container .grid-6 {
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
