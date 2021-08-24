@@ -8,13 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="container">
-        <div class="grid-6">
-            Olá mundo
-        </div>
-        <div class="grid-10">
-            eu sou {$NOME}
-        </div>
+    <header></header>
+    <section class="nav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Minha Conta</a></li>
+                <li><a href="#">Carrinho</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><select name="cat" id="Cat">
+                    <option value="" selected disabled hidden>Categorias</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select></li>
+            </ul>
+        </nav>
     </section>
+    <footer></footer>
 </body>
 </html>

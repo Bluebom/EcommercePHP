@@ -1,5 +1,5 @@
 <?php
-    class Template extends Smarty{
+    class Template extends SmartyBC{
         public function __construct() {
             parent::__construct();
 

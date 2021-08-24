@@ -1,13 +1,9 @@
-@import '_reset';
-@import '_grid';
+@import 'reset';
+@import 'grid';
+@import 'header';
+@import 'nav';
+@import 'aside';
+@import 'main';
 
-body, html{
-    height: 100%;
-    background-color: tomato;
-}
 
-.container{
-    .grid-6{
-        background-color: yellow;
-    }
-}
+
