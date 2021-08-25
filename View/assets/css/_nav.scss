@@ -106,15 +106,16 @@ section.nav{
                 }
             }
             .search-box{
+                width: 14.5rem;
                 &:hover, &:active{
-                    max-width: 50%;
+                    width: 14.5rem;
                 }
             }
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     section.nav{
         nav.container{
             div.menuHamburguer{

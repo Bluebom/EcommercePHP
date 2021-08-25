@@ -29,11 +29,11 @@
                 $page = $_GET['url'];
                 self::$pag = explode('/', $page);
                 
-                $page = 'Controller/' . self::$pag[0] . '.php';
+                $page = self::$pasta_controller .'/' . self::$pag[0] . '.php';
                 if(file_exists($page)){
                     include $page;
                 } else{
-                    include './erro404.php';
+                    include self::$pasta_controller .'/erro404.php';
                 }
             }
         }

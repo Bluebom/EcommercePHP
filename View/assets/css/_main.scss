@@ -1,0 +1,17 @@
+main{
+    padding: 0 1rem;
+    border-left: .15rem solid #2b2b2b;
+    section.breadcrumbs{
+        background-color: #48dbfb33;
+        padding: .5rem;
+        span{
+            color: #2980b9;
+        }
+    }
+
+    section.main{
+        margin-top: 1rem;
+        min-height: 66vh;
+        font-size: 3rem;
+    }
+}
