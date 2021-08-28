@@ -22,6 +22,13 @@
             return self::get_SiteHome() . '/carrinho';
         }
 
+        public static function pag_minhaConta(){
+            return self::get_SiteHome() . '/minhaconta';
+        }
+
+        public static function pag_contato(){
+            return self::get_SiteHome() . '/contato';
+        }
 
         public static function get_page(){
             if(isset($_GET['url'])){

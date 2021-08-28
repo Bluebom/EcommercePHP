@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-25 04:01:51
+/* Smarty version 3.1.39, created on 2021-08-28 02:27:52
   from 'C:\xampp\htdocs\dashboard\EcommercePHP\View\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6125a48f3ab0b0_80500021',
+  'unifunc' => 'content_612983089d7864_81181408',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e729853351e0f99d8f8f0296f439407b65372fae' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dashboard\\EcommercePHP\\View\\index.tpl',
-      1 => 1629856908,
+      1 => 1630110469,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6125a48f3ab0b0_80500021 (Smarty_Internal_Template $_smarty_tpl) {
+function content_612983089d7864_81181408 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,9 @@ function content_6125a48f3ab0b0_80500021 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap">
+    <title><?php echo $_smarty_tpl->tpl_vars['TITLE_']->value;?>
+</title>
 </head>
 <body>
     <header class="container"></header>
@@ -39,17 +41,12 @@ function content_6125a48f3ab0b0_80500021 (Smarty_Internal_Template $_smarty_tpl)
             <ul class="container">
                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
 "><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fas fa-user"></i> Minha Conta</a></li>
+                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+"><i class="fas fa-user"></i> Minha Conta</a></li>
                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
 "><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
-                <li><select name="cat" id="Cat">
-                    <option value="" selected disabled hidden>Categorias</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select></li>
+                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+"><i class="fas fa-envelope"></i> Contato</a></li>
             </ul>
             <div class="menuHamburguer">
                 <span></span>
@@ -92,7 +89,13 @@ function content_6125a48f3ab0b0_80500021 (Smarty_Internal_Template $_smarty_tpl)
             </section>
         </main>
     </section>
-    <footer></footer>
+    <footer>
+        <section class="container">
+            <h4><?php echo $_smarty_tpl->tpl_vars['TITLE_']->value;?>
+</h4>
+            <p>Todos os direitos reservados - Franklin Henrique &copy;</p>
+        </section>
+    </footer>
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/js/menuHamburguer.js"><?php echo '</script'; ?>

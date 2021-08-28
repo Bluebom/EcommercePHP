@@ -1,5 +1,7 @@
 aside{
     margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: .15rem solid #60606099;
     ul li{
         padding-bottom: .5rem;
         cursor: pointer;
@@ -28,27 +30,10 @@ aside{
         }
     }
 }
-
+/*
 @media (max-width: 800px) {
     aside.grid-3{
-        margin-left: .25rem;
-        margin-right: .25rem;
-        width: 90px !important;
-        ul li{
-            padding-bottom: .5rem;
-            cursor: pointer;
-            h3{
-                font: {
-                    size: .85rem;
-                };
-                line-height: 1.3rem;
-            }
-            p {
-                font: {
-                    size: .75rem;
-                }
-                line-height: 1.15rem;
-            }
-        }
+        
     }
 }
+*/

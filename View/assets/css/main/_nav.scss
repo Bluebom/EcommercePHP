@@ -50,11 +50,11 @@ section.nav{
         border-radius: 40px;
         padding: 10px;
         position: relative;
-        background-color: #0984e300;
+        background-color: $main-color;
         transition: .5s;
         &:hover, &:active{
             max-width: 100%;
-            background-color: #0984e3;
+            background-color: $main-color;
         }
         &:hover > .search-txt{
             width: 100%;
@@ -74,7 +74,7 @@ section.nav{
         }
         .search-btn{
             color: #ffffff;
-            background-color: #0984e3;
+            background-color: $main-color;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -168,7 +168,7 @@ section.nav{
 
             .search-box{
                 max-width: 42.5%;
-                background-color: #0984e3;
+                background-color: $main-color;
                 .search-txt{
                     width: 100%;
                     padding: 0 5px;

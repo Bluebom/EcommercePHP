@@ -1,9 +1,16 @@
-@import 'reset';
-@import 'grid';
-@import 'header';
-@import 'nav';
-@import 'aside';
-@import 'main';
+$main-color: #0984e3;
+$secondary-color: #606060;
+$main-font: 'Inter', sans-serif; /* Geral */
+$secondary-font: 'Source Serif Pro', serif; /* Textinhos */
+
+@import './main/reset';
+@import './main/grid';
+@import './main/header';
+@import './main/footer';
+@import './main/nav';
+@import './main/aside';
+@import './main/main';
+@import './contato/contatoStyle';
 
 
 

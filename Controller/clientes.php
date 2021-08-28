@@ -1,1 +1,6 @@
-<h2>Esta é a página dos Clientes!</h2>
+<?php
+
+$smarty = new Template();
+
+$smarty->assign('CLIENTES', 'Página de clientes');
+$smarty->display('clientes.tpl');

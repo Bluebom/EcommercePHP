@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{$GET_TEMA}/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap">
+    <title>{$TITLE_}</title>
 </head>
 <body>
     <header class="container"></header>
@@ -14,16 +15,9 @@
         <nav class="container">
             <ul class="container">
                 <li><a href="{$GET_HOME}"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fas fa-user"></i> Minha Conta</a></li>
+                <li><a href="{$PAG_MINHACONTA}"><i class="fas fa-user"></i> Minha Conta</a></li>
                 <li><a href="{$PAG_CARRINHO}"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
-                <li><select name="cat" id="Cat">
-                    <option value="" selected disabled hidden>Categorias</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select></li>
+                <li><a href="{$PAG_CONTATO}"><i class="fas fa-envelope"></i> Contato</a></li>
             </ul>
             <div class="menuHamburguer">
                 <span></span>
@@ -66,7 +60,12 @@
             </section>
         </main>
     </section>
-    <footer></footer>
+    <footer>
+        <section class="container">
+            <h4>{$TITLE_}</h4>
+            <p>Todos os direitos reservados - Franklin Henrique &copy;</p>
+        </section>
+    </footer>
     <script src="{$GET_TEMA}/assets/js/menuHamburguer.js"></script>
 </body>
 </html>
