@@ -196,7 +196,7 @@ header.container {
 footer {
   margin-top: .75rem;
   position: relative;
-  top: 100%;
+  top: calc(50vh + 20%);
   background-color: #2b2b2b;
   height: 5rem;
 }
@@ -387,9 +387,9 @@ section.nav .search-box .search-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
     width: 100%;
     position: absolute;
     top: 2.75rem;
@@ -400,15 +400,27 @@ section.nav .search-box .search-btn {
     transition: 5s ease-in-out;
   }
   section.nav nav.container ul.container li {
+    display: block;
+    width: 100%;
     margin-left: -1000rem;
+    padding: .5rem 0;
     -webkit-transition: .5s;
     transition: .5s;
+  }
+  section.nav nav.container ul.container li a {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
   section.nav nav.container ul.container.ativo {
     height: auto;
   }
   section.nav nav.container ul.container.ativo li {
-    margin-left: 0rem;
+    margin-left: 0;
+    padding-left: 6%;
+  }
+  section.nav nav.container ul.container.ativo li:hover {
+    background-color: #606060;
   }
   section.nav nav.container ul.container.ativo + div.menuHamburguer span {
     display: none;
@@ -430,7 +442,7 @@ section.nav .search-box .search-btn {
             transform: rotate(45deg);
   }
   section.nav nav.container .search-box {
-    max-width: 42.5%;
+    max-width: 52.5%;
     background-color: #0984e3;
   }
   section.nav nav.container .search-box .search-txt {
@@ -446,7 +458,6 @@ aside {
 }
 
 aside ul li {
-  padding-bottom: .5rem;
   cursor: pointer;
 }
 
@@ -458,26 +469,31 @@ aside ul li h3 {
   background-color: #2b2b2b;
   padding: .25rem 3.5rem .25rem .75rem;
   text-align: left;
+  -webkit-box-shadow: 0 0 0.15rem #606060;
+          box-shadow: 0 0 0.15rem #606060;
 }
 
 aside ul li p {
-  margin-left: 1rem;
+  padding: .5rem .25rem;
+  margin-left: .75rem;
   color: #606060;
   font-size: 1.15rem;
-  line-height: 1.5rem;
 }
 
 aside ul li p:hover {
-  color: #111111;
+  color: #111;
+  background-color: #00000022;
 }
 
-/*
 @media (max-width: 800px) {
-    aside.grid-3{
-        
-    }
+  aside.grid-3 {
+    max-width: 95vw;
+    width: 100%;
+    padding-right: 0rem;
+    border-right: none;
+  }
 }
-*/
+
 main {
   padding: 0 1rem;
 }
@@ -495,6 +511,15 @@ main section.breadcrumbs span {
 main section.main {
   margin-top: 1rem;
   font-size: 3rem;
+}
+
+@media (max-width: 800px) {
+  main.grid-13 {
+    max-width: 95vw;
+    width: 100%;
+    padding: 0rem;
+    border-right: none;
+  }
 }
 
 section.contato {
@@ -627,5 +652,22 @@ section.contato div.border-area input[type=submit] {
   position: relative;
   top: -1rem;
   left: 8rem;
+}
+
+@media (max-width: 800px) {
+  section.secFather.container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

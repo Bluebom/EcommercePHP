@@ -12,5 +12,15 @@ $secondary-font: 'Source Serif Pro', serif; /* Textinhos */
 @import './main/main';
 @import './contato/contatoStyle';
 
+@media (max-width: 800px) {
+    section.secFather.container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
 
 

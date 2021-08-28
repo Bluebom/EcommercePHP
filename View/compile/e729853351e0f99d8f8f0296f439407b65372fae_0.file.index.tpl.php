@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-28 02:27:52
+/* Smarty version 3.1.39, created on 2021-08-28 20:02:17
   from 'C:\xampp\htdocs\dashboard\EcommercePHP\View\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_612983089d7864_81181408',
+  'unifunc' => 'content_612a7a292efbc5_19150476',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e729853351e0f99d8f8f0296f439407b65372fae' => 
     array (
       0 => 'C:\\xampp\\htdocs\\dashboard\\EcommercePHP\\View\\index.tpl',
-      1 => 1630110469,
+      1 => 1630173694,
       2 => 'file',
     ),
   ),
@@ -20,17 +20,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_612983089d7864_81181408 (Smarty_Internal_Template $_smarty_tpl) {
+function content_612a7a292efbc5_19150476 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+    <link rel="stylesheet preload" as="style" onload="this.rel = 'stylesheet'" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap">
+    <link rel="stylesheet preload prefetch" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" crossorigin="anonymous">
     <title><?php echo $_smarty_tpl->tpl_vars['TITLE_']->value;?>
 </title>
 </head>
@@ -61,7 +61,7 @@ function content_612983089d7864_81181408 (Smarty_Internal_Template $_smarty_tpl)
             </div>
         </nav>
     </section>
-    <section class="container" style="margin-top: 1rem;">
+    <section class="secFather container" style="margin-top: 1rem;">
         <aside class="grid-3">
             <ul>
                     <li><h3>Categorias</h3></li>

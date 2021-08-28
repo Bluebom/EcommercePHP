@@ -126,7 +126,7 @@ section.nav{
                 overflow: hidden;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: left;
                 width: 100%;
                 position: absolute;
                 top: 2.75rem;
@@ -137,13 +137,26 @@ section.nav{
                 z-index: 90;
                 transition: 5s ease-in-out;
                 li{
+                    display: block;
+                    width: 100%;
                     margin-left: -1000rem;
+                    padding: .5rem 0;
                     transition: .5s;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        
+                    }
                 }
                 &.ativo{
                     height: auto;
                     li{
-                        margin-left: 0rem;
+                        margin-left: 0;
+                        padding-left: 6%;
+                        &:hover{
+                            background-color: #606060;
+                        }
                     }
                 }
                 &.ativo + div.menuHamburguer{
@@ -167,7 +180,7 @@ section.nav{
             }
 
             .search-box{
-                max-width: 42.5%;
+                max-width: 52.5%;
                 background-color: $main-color;
                 .search-txt{
                     width: 100%;

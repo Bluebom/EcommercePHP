@@ -3,7 +3,6 @@ aside{
     padding-right: 1rem;
     border-right: .15rem solid #60606099;
     ul li{
-        padding-bottom: .5rem;
         cursor: pointer;
         h3{
             font: {
@@ -15,25 +14,29 @@ aside{
             background-color: #2b2b2b;
             padding: .25rem 3.5rem .25rem .75rem;
             text-align: left;
+            box-shadow: 0 0 .15rem $secondary-color;
         }
         p {
-
-            margin-left: 1rem;
+            padding: .5rem .25rem;
+            margin-left: .75rem;
             color: #606060;
             font: {
                 size: 1.15rem;
             }
-            line-height: 1.5rem;
             &:hover{
-                color: #111111;
+                color: #111;
+                background-color: #00000022;
             }
         }
     }
 }
-/*
+
 @media (max-width: 800px) {
     aside.grid-3{
-        
+        max-width: 95vw;
+        width: 100%;
+        padding-right: 0rem;
+        border-right: none;       
+
     }
 }
-*/

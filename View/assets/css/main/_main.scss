@@ -14,3 +14,13 @@ main{
         font-size: 3rem;
     }
 }
+
+@media (max-width: 800px) {
+    main.grid-13{
+        max-width: 95vw;
+        width: 100%;
+        padding: 0rem;
+        border-right: none;       
+
+    }
+}

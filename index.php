@@ -17,9 +17,9 @@ $smarty->assign('TITLE_', Config::SITE_NOME);
 $query = 'select * from categorias';
 $db = new Conexao();
 $db::executeSQL($query);
-echo '<pre>';
-print_r($db::listarDados());
-echo '</pre>';
+// echo '<pre>';
+// print_r($db::listarDados());
+// echo '</pre>';
 // LastLine
 $smarty->display('index.tpl');
 ?>
