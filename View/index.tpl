@@ -7,6 +7,10 @@
     <link rel="stylesheet preload" as="style" onload="this.rel = 'stylesheet'" href="{$GET_TEMA}/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet preload prefetch" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="{$GET_TEMA}/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{$GET_TEMA}/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{$GET_TEMA}/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="{$GET_TEMA}/assets/img/site.webmanifest">
     <title>{$TITLE_}</title>
 </head>
 <body>
