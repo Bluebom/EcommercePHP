@@ -42,4 +42,12 @@ Class Conexao extends Config{
         return self::$obj->fetch(PDO::FETCH_ASSOC);
     }
 
+    public static function totalDados(){
+        return self::$obj->rowCount();
+    }
+
+    public static function getItens(){
+        // return self::$obj->$itens;
+    }
+
 }
