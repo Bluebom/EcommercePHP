@@ -1,6 +1,9 @@
 <?php
 Class Conexao extends Config{
-    private static $host, $user, $senha, $banco, $prefix, $obj;
+    private static $host, $user, $senha, $banco;
+
+    protected $obj, $itens = array(), $prefix;
+
 
     function __construct()
     {
@@ -8,7 +11,7 @@ Class Conexao extends Config{
         self::$user = self::BD_USER;
         self::$senha = self::BD_SENHA;
         self::$banco = self::BD_BANCO;
-        self::$prefix = self::BD_PREFIX;
+        $this->prefix = self::BD_PREFIX;
 
         try{
 
@@ -33,21 +36,21 @@ Class Conexao extends Config{
         return $link;
     }
 
-    public static function executeSQL($query, array $params = NULL){
-        self::$obj = self::conectar()->prepare($query);
-        return self::$obj->execute();
+    public function executeSQL($query, array $params = NULL){
+        $this->obj = self::conectar()->prepare($query);
+        return $this->obj->execute();
     }
 
-    public static function listarDados(){
-        return self::$obj->fetch(PDO::FETCH_ASSOC);
+    public function listarDados(){
+        return $this->obj->fetch(PDO::FETCH_ASSOC);
     }
 
-    public static function totalDados(){
-        return self::$obj->rowCount();
+    public function totalDados(){
+        return $this->obj->rowCount();
     }
 
-    public static function getItens(){
-        // return self::$obj->$itens;
+    public function getItens(){
+        return $this->itens;
     }
 
 }

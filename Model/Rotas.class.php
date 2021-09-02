@@ -30,6 +30,10 @@
             return self::get_SiteHome() . '/contato';
         }
 
+        public static function get_ImageURL(){
+            return self::get_SiteTema() . '/assets/img/';
+        }
+
         public static function get_page(){
             if(isset($_GET['url'])){
                 

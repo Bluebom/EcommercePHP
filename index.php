@@ -14,11 +14,9 @@ $smarty->assign('PAG_MINHACONTA', Rotas::pag_minhaConta());
 $smarty->assign('PAG_CONTATO', Rotas::pag_contato());
 $smarty->assign('TITLE_', Config::SITE_NOME);
 
-$query = 'select * from categorias';
+$query = 'select * from produtos';
 $db = new Conexao();
-$db::executeSQL($query);
-
-echo $db::getItens();
+$db->executeSQL($query);
 
 // LastLine
 $smarty->display('index.tpl');

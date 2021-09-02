@@ -27,3 +27,16 @@ footer{
         }
     }
 }
+
+@media (max-width: 800px) {
+    footer{
+        section.container{
+
+            max-width: 95vw;
+            width: 100%;
+            padding: 0rem;
+            border-right: none;       
+        }
+
+    }
+}
